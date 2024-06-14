@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+     --background-color:#FBFBFB;
+     --green-background-color:#153e52;
+     --dark-green-color:#113448;
+     --light-green-color:#14BF98;
+     --dark-gray-color:#484A46;
+     --light-gray-color:#787976;
+     --white-color:#FFFFFF;
+     --disabled-color:#e9ecef;
+     --dark-white-color:#dfe5ec;
+     --light--grey--border--color: #ebe8e8;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+h1,h2,h3,h4,h5,h6,p,a,span,button,li,input,textarea,label,select,option{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+button{
+   cursor: pointer;
+   border: 1px solid var(--light-green-color);
+   background-color: var(--light-green-color);
+   color: var(--white-color);
+   text-transform: uppercase;
+   padding: 1rem 2rem;
+   border-radius: 5px;
+   transition: all 0.125s ease-in-out;
+}
+
+button:hover{
+     background-color: transparent;
+     color: var(--light-green-color);
+}
+
+.section-title{
+    color: var(--light-green-color);
+    text-transform: uppercase;
+    padding: 1rem 0px;
+}
+
+.itallic{
+    font-style: italic;
+}
+
+nav{
+   display: flex;
+   flex-direction: row;
+   gap: 5px;
+   position: fixed;
+   justify-content: space-between;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 1rem 3rem;
+   box-sizing: border-box;
+   align-items: center;
+   color: var(--white-color);
+}
+
+nav a{
+   text-decoration: none;
+   color: var(--white-color);
+   transition: color 0.125 ease-in-out;
+}
+
+nav a:visited{
+   color: var(--white-color);
+}
+
+nav a:hover{
+   color: var(--light-green-color);
+}
+
+nav img{
+   height:4rem ;
+}
+
+nav ul {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+}
+
+.home{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(home.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white-color);
+    gap: 1.25rem
+ }
+
+.home h1{
+     text-transform: uppercase;
+     font-size: 2.3rem;
+     padding: 0.3rem 0;
+}
+
+.home p{
+     font-size: 1.125rem;
+     width:50%  
+}
